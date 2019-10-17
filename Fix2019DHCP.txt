@@ -1,0 +1,31 @@
+They confirmed it being an issue and are working on a permanent solution, and provided us a workaround for the time being:
+
+1-Add this registry key :
+
+ 
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\Dhcp" /v RequiredPrivileges /d "SeChangeNotifyPrivilege"\0"SeCreateGlobalPrivilege"\0"SeImpersonatePrivilege"\0 /t REG_MULTI_SZ /f
+
+​
+
+2-Restart the DHCP client service :-
+
+ 
+
+$dhcpPID = $( tasklist /svc /fo CSV | findstr Dhcp).split(",")[1].replace('"','')
+
+ 
+
+stop-process $dhcpPID -force
+
+ 
+
+Start-Service Dhcp
+
+ 
+
+3-Restart the Remote Connection Service.
+
+If you want, you can skip step 2 & 3 and just reboot the RRAS server after step 1.
+
+Confirmed on 2 servers.
