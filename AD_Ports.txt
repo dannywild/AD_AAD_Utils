@@ -1,0 +1,18 @@
+tcp/53 DNS  
+tcp/88 Kerberos  
+tcp/135 RPC  
+tcp/445 sysvol share  
+tcp/389 LDAP  
+tcp/464 Kerberos password (Max/Unix clients)  
+tcp/636 LDAP SSL  (if the domain controllers have/need/use certificates)   
+tcp/1688 KMS (if KMS is used.  Not necessarily AD, but the SRV record is in AD and clients need to communicate with the KMS).  
+tcp/3268 LDAP GC
+tcp/3269 LDAP GC SSL (if the domain controllers have/need/use certificates)   
+tcp/49152 through 65535 (Windows Vista/2008 and higher) aka “high ports”  
+
+udp/53 DNS
+udp/88 Kerberos
+udp/123 time  
+udp/135 RPC  
+udp/389 LDAP  
+udp/445 sysvol share  
