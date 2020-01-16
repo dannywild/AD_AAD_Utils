@@ -3,3 +3,5 @@ https://ccmexec.com/2019/05/roam-chrome-settings-with-onedrive4b-with-intune-or-
 https://ccmexec.com/2018/09/using-google-chrome-roaming-profile-settings-with-ue-v/
 
 https://www.petenetlive.com/KB/Article/0000944
+
+https://adminthing.blogspot.com/2016/05/reset-ts-rds-grace-period.html
