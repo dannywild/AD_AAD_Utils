@@ -5,3 +5,5 @@ https://ccmexec.com/2018/09/using-google-chrome-roaming-profile-settings-with-ue
 https://www.petenetlive.com/KB/Article/0000944
 
 https://adminthing.blogspot.com/2016/05/reset-ts-rds-grace-period.html
+
+https://ravingroo.com/762/batch-file-append-ping-failures-and-time-stamp-to-a-text-file/
